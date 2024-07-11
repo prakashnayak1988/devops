@@ -1,0 +1,164 @@
+    1  pwd
+    2  git status
+    3  git 
+    4  git --version
+    5  git clone https://github.com/prakashnayak1988/github-sample-repo.git
+    6  ls
+    7  git config --global user.name "prakashnayak1988"
+    8  git config --global user.email "prakash.bit.nayak@gmail.com"
+    9  git 
+   10  github-sample-repo
+   11  cd github-sample-repo
+   12  git status
+   13  pwd
+   14  cd ..
+   15  pwd
+   16  git clone https://github.com/prakashnayak1988/github-sample-repo.git
+   17  git add 
+   18  git status
+   19  git status
+   20  ls
+   21  github-sample-repo
+   22  cd github-sample-repo
+   23  git status
+   24  ls
+   25  cd github-sample-repo/
+   26  ls
+   27  git pull
+   28  git status
+   29  ls
+   30  cd github-sample-repo/
+   31  ls
+   32  cd ..
+   33  git clone https://github.com/prakashnayak1988/devops.git
+   34  ls
+   35  cd devops/
+   36  git status
+   37  git pull
+   38  ls -l
+   39  git pull
+   40  git checkout feature-branch
+   41  ls
+   42  ls -l
+   43  git log
+   44  sudo apt-get update &&     sudo apt-get install     ca-certificates     curl     gnupg     lsb-release -y
+   45  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   46  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+   47    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   48  sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+   49  sudo docker run hello-world
+   50  sudo usermod -a -G docker ubuntu
+   51  sudo reboot
+   52  docker run hello-world
+   53  docker --help
+   54  sudo search ubuntu
+   55  sudo usermod -a -G docker ubuntu
+   56  sudo reboot
+   57  docker search nginx
+   58  docker pull nginx
+   59  docker image ls
+   60  docker container run -p 8080:80 -d --name prakash-container nginx
+   61  docker container ls
+   62  curl localhost:8080
+   63  ls
+   64  cd devops/
+   65  ls
+   66  git clone https://github.com/arjunachari12/docker-demo-with-simple-python-app.git 
+   67  ls
+   68  cd docker-demo-with-simple-python-app/
+   69  docker 
+   70  docker -v
+   71  cd ..
+   72  ls 
+   73  cd docker-demo-with-simple-python-app/
+   74  docker build -t my-python-app-image:1.0.0 .
+   75  docker images
+   76  docker images ls
+   77  docker images
+   78  docker image
+   79  docker images
+   80  ls 
+   81  docker tag my-python-app-image:1.0.0 prakash1988/my-python-app-image:1.0.0
+   82  docker images
+   83  docker login
+   84  docker push prakash1988/my-python-app-image:tagname
+   85  docker push prakash1988/my-python-app-image:1.0.0
+   86  docker tag my-python-app-image:1.0.0 prakash1988/my-python-app-image:1.1.0
+   87  docker push prakash1988/my-python-app-image:1.1.0
+   88  cd ..
+   89  git clone git clone https://github.com/spring-projects/spring-petclinic.git
+   90  git clone https://github.com/spring-projects/spring-petclinic.git
+   91  ls 
+   92  cd spring-petclinic/
+   93  ls
+   94  docker init
+   95* docker build -t my-petclinic-image:
+   96  docker build -t my-petclinic-image:1.0.0 .
+   97  docker images
+   98  docker push prakash1988/my-petclinic-image:1.1.0
+   99  docker tag  my-petclinic-image:1.0.0 prakash1988/my-python-app-image:1.1.0
+  100  docker push
+  101  docker push prakash1988/my-petclinic-image:1.1.0
+  102  docker push prakash1988/my-petclinic-image:1.2.0
+  103  docker container ls
+  104  docker container logs f3b57dae4dd3
+  105  docker container top f3b57dae4dd3
+  106  docker container stat f3b57dae4dd3
+  107  docker container  stat  f3b57dae4dd3
+  108  docker container  stat f3b57dae4dd3
+  109  docker container inspect f3b57dae4dd3
+  110  docker network ls
+  111  docker container inspect 43de5e031124
+  112  docker  network  inspect 43de5e031124
+  113  docker network create my_app_net
+  114  docker network create --driver bridge --subnet 192.168.1.0/24 --gateway 192.168.1.1 --ip-range 192.168.1.1.126/25 my_app_net
+  115  docker network create --driver bridge --subnet 192.168.1.0/24 --gateway 192.168.1.1 --ip-range 192.168.1..128/25 my_app_net
+  116  docker network create --driver bridge --subnet 192.168.1.0/24 --gateway 192.168.1.1 --ip-range 192.168.1.128/25 my_app_net
+  117  docker network create --driver bridge --subnet 192.168.1.0/24 --gateway 192.168.1.1 --ip-range 192.168.1..128/25 my_app_net-new
+  118  docker network create --driver bridge --subnet 192.168.1.0/24 --gateway 192.168.1.1 --ip-range 192.168.1.128/25 my_app_net_new
+  119  docker container run -d --network my_app_net_new nginx
+  120  docker volume ls
+  121  docker push prakash1988/spring-pet-clinic:1.2.0
+  122  docker images
+  123  docker push prakash1988/my-petclinic-image:1.2.0
+  124  docker push prakash1988/my-petclinic-image:1.1.0
+  125  docker push prakash1988/my-petclinic-image:1.0.0
+  126  docker push prakash1988/spring-pet-clinic:1.0.0
+  127  docker login
+  128  docker push prakash1988/spring-pet-clinic:1.0.0
+  129  docker push prakash1988/spring-pet-clinic:1.0.0 .
+  130  docker push prakash1988/spring-pet-clinic:1.0.0
+  131  docker push --help
+  132  docker push --all-tags
+  133  docker push prakash1988  --all-tags
+  134  docker push prakash1988/spring-pet-clinic:1.0.0
+  135  docker push
+  136  docker images
+  137  sudo apt-get update &&   sudo apt-get install -y apt-transport-https &&   curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - &&   sudo touch /etc/apt/sources.list.d/kubernetes.list &&   echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list &&   sudo apt-get update &&   sudo apt-get install -y kubectl
+  138  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64   && chmod +x minikube &&   sudo cp minikube /usr/local/bin && rm minikube
+  139  minikube start
+  140  kubectl get nodes
+  141  sudo snap install kubectl
+  142  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  143  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+  144  kubectl version --client
+  145  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64   && chmod +x minikube &&   sudo cp minikube /usr/local/bin && rm minikube
+  146  minikube start
+  147  kubectl get nodes
+  148  source <(kubectl completion bash)
+  149  echo "source <(kubectl completion bash)" >> ~/.bashrc
+  150  alias k=kubectl
+  151  complete -F __start_kubectl k
+  152  cd ..
+  153  ls
+  154  cd k8s/
+  155  kubectl 
+  156  kubectl create -f pod.yml
+  157  kubectl get pod
+  158  kubectl describe pod pod1
+  159  kubectl get pod
+  160  kubectl delete pod pod1
+  161  kubectl get pod
+  162  kubectl create -f pod.yml
+  163  kubectl get pod
+  164  history
